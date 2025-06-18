@@ -29,6 +29,9 @@
                     <a class="link" href="#about">About</a>
                 </li>
                 <li class="item">
+                    <a class="link" href="#service">Services</a>
+                </li>
+                <li class="item">
                     <a class="link" href="#skills">Skills</a>
                 </li>
                 <li class="item">
@@ -65,19 +68,20 @@
         <div class="container text-center">
             <div class="about">
                 <div class="about-img-holder">
-                    <img src="assets/imgs/maiora_image.jpg" class="about-img" alt="Maiar Hussein">
+                    <img src="assets/imgs/maiora_image2.jpg" class="about-img" alt="Maiar Hussein">
                 </div>
                 <div class="about-caption">
                     <p class="section-subtitle">Who Am I ?</p>
                     <h2 class="section-title mb-3">About Me</h2>
                     <p>
-                        As a dedicated Software Engineering major, I have a strong foundation in programming and technical problem-solving.
-                        With expertise in full-stack development, Node.js, SQL, and Agile methodologies, I specialize in building efficient,
-                        scalable, and high-performing systems. My adaptability, commitment to quality,
-                        and passion for continuous learning drive me to deliver 
-                        innovative solutions that create a meaningful impact in every project.
+                        A results-driven backend developer with a strong academic background in Software Engineering and hands-on 
+                        experience in building scalable and maintainable systems. 
+                        I specialize in backend technologies including ASP.NET, Laravel, Node.js, 
+                        and relational and NoSQL databases like SQL and MongoDB. My focus is on crafting clean APIs, 
+                        efficient database structures, and high-performance systems. I thrive in Agile environments and 
+                        continuously aim to deliver real-world solutions that are impactful and production-ready.
                     </p>
-                    <a href="https://drive.google.com/file/d/1FLtsOs8yhjAS6Fs8gNHH1nNfMohGxcuS/view?usp=drive_link" 
+                    <a href="https://drive.google.com/file/d/1ULjf8BZXQcBspTUPCSbo3n3C4xuuokJy/view?usp=sharing" 
                     class="btn-rounded btn btn-outline-primary mt-4" download> Download CV
                     </a>
                 </div>
@@ -117,7 +121,7 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
                         <div class="body">
-                            <img src="assets/imgs/database2.svg" class="icon">
+                            <img src="assets/imgs/api.svg" class="icon">
                             <h6 class="title">API Development</h6>
                             <p class="subtitle">Building secure and scalable RESTful & GraphQL APIs for seamless
                                  application communication.</p>
@@ -127,7 +131,7 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
                         <div class="body">
-                            <img src="assets/imgs/api.svg" class="icon">
+                            <img src="assets/imgs/database2.svg" class="icon">
                             <h6 class="title">Database Management</h6>
                             <p class="subtitle">Designing and managing SQL & NoSQL
                                  databases to ensure data integrity and performance.</p>
@@ -244,98 +248,106 @@
 </section>
 
 
-    <!-- portfolio section -->
-    <section class="section" id="portfolio">
-        <div class="container text-center">
-            <p class="section-subtitle">What I Did ?</p>
-            <h6 class="section-title mb-6">Projects</h6>
-            <!-- row -->
-            <div class="row">
-                <!-- E-Commerce Website Card -->
-            <div class="col-md-4">
-                <div class="card project-card">
-                    <div class="card-body text-center"> <!-- Center text and buttons -->
-                        <h5 class="card-title">E-Commerce Website</h5>
-                        <p class="card-text">Laravel & MySQL</p>
-                        <div class="d-flex justify-content-center gap-2">
-                            <a href="https://github.com/HebaEltawil/Laravel-_e-commerce" 
-                            class="btn btn-light">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Restaurant Reservation API Card -->
-            <div class="col-md-4">
-                <div class="card project-card">
-                    <div class="card-body text-center"> 
-                        <h5 class="card-title">Restaurant Reservation API</h5>
-                        <p class="card-text">Node.js & Angular</p>
-                        <div class="d-flex justify-content-center gap-2"> 
-                            <a href="https://github.com/OmarAbdelgilil/R_ReservationBackEnd" 
-                               class="btn btn-light">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Tracking System Card -->
-            <div class="col-md-4">
-                <div class="card project-card">
-                    <div class="card-body text-center"> 
-                        <h5 class="card-title">Tracking System</h5>
-                        <p class="card-text">Flutter & Node.js & MongoDB</p>
-                        <div class="d-flex justify-content-center gap-2"> 
-                            <a href="https://github.com/HebaEltawil/TrackWise_backend"
-                             class="btn btn-light" >GitHub</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
+<!-- Project portfolio section -->
+<section class="section" id="portfolio">
+  <div class="container text-center position-relative">
+    <p class="section-subtitle">What I Did?</p>
+    <h6 class="section-title mb-5">Projects</h6>
+
+    <!-- Arrows -->
+    <button id="leftArrow" class="scroll-arrow left-arrow">&#10094;</button>
+    <button id="rightArrow" class="scroll-arrow right-arrow">&#10095;</button>
+
+    <!-- Scrollable projects -->
+    <div class="project-scroll-container">
+      <div class="project-scroll-content d-flex">
+        <!-- Project Cards -->
+        <div class="card project-card me-3">
+          <div class="card-body text-center">
+            <h6 class="card-title">E-Commerce Website</h6>
+            <p>Laravel & MySQL</p>
+            <a href="https://github.com/Maiarhu20/Ecommerce-Website-using-Laravel" class="btn btn-light">GitHub</a>
+          </div>
         </div>
-    </section> 
-
-    <!-- contact section -->
-    <section class="section" id="contact">
-        <div class="container text-center">
-            <p class="section-subtitle">How can you communicate?</p>
-            <h6 class="section-title mb-5">Contact Me</h6>
-            <!-- contact form -->
-            <form id="contact-form" class="contact-form col-md-10 col-lg-8 m-auto">
-                <div class="form-row">
-                    <div class="form-group col-sm-6">
-                        <input type="text" size="50" class="form-control" placeholder="Your Name" name="name" required>
-                    </div>
-                    <div class="form-group col-sm-6">
-                        <input type="email" class="form-control" placeholder="Enter Email" name="email" required>
-                    </div>
-                    <div class="form-group col-sm-12">
-                        <textarea name="message" id="comment" rows="6" class="form-control" placeholder="Write Something" required></textarea>
-                    </div>
-                    <div class="form-group col-sm-12 mt-3">
-                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
-                    </div>
-                </div>
-            </form>
-            
+        
+        <div class="card project-card me-3">
+          <div class="card-body text-center">
+            <h6 class="card-title">Reservation API</h6>
+            <p>Node.js & MongoDB</p>
+            <a href="https://github.com/Maiarhu20/Restaurant-Reservation" class="btn btn-light">GitHub</a>
+          </div>
         </div>
-    </section>
+        <div class="card project-card me-3">
+          <div class="card-body text-center">
+            <h6 class="card-title">TrackWise mobile app</h6>
+            <p>Node.js & MongoDB Atlas</p>
+            <a href="https://github.com/Maiarhu20/TrackWise" class="btn btn-light">GitHub</a>
+          </div>
+        </div>
 
-    <button id="backToTop" class="back-to-top">
-        ↑
-    </button>
+        <div class="card project-card me-3">
+          <div class="card-body text-center">
+            <h6 class="card-title">E-Commerce ASP.NET</h6>
+            <p>MVC ASP.NET & SQL</p>
+            <a href="https://github.com/Maiarhu20/Ecommerce-Website" class="btn btn-light">GitHub</a>
+          </div>
+        </div>
+
+        <div class="card project-card me-3">
+          <div class="card-body text-center">
+            <h6 class="card-title">Bookify Authentication</h6>
+            <p> ASP.NET </p>
+            <a href="https://github.com/Maiarhu20/Authentication-for-Bookify" class="btn btn-light">GitHub</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- contact section -->
+<section class="section" id="contact">
+    <div class="container text-center">
+        <p class="section-subtitle">How can you communicate?</p>
+        <h6 class="section-title mb-5">Contact Me</h6>
+        <!-- contact form -->
+        <form id="contact-form" class="contact-form col-md-10 col-lg-8 m-auto">
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <input type="text" size="50" class="form-control" placeholder="Your Name" name="name" required>
+                </div>
+                <div class="form-group col-sm-6">
+                    <input type="email" class="form-control" placeholder="Enter Email" name="email" required>
+                </div>
+                <div class="form-group col-sm-12">
+                    <textarea name="message" id="comment" rows="6" class="form-control" placeholder="Write Something" required></textarea>
+                </div>
+                <div class="form-group col-sm-12 mt-3">
+                    <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
+                </div>
+            </div>
+        </form>
+        
+    </div>
+</section>
+
+<button id="backToTop" class="back-to-top">
+    ↑
+</button>
     
 
-    <!-- footer -->
-    <div class="container">
-        <footer class="footer">
-            <div class="social-links text-center m-auto">
-                <a href="https://github.com/Maiarhu20" class="link"><i class="ti-linkedin"></i> </a>
-                <a href="https://www.linkedin.com/in/maiar-hussein" class="link"><i class="ti-github"></i></a>
-            </div>
-        </footer>
-    </div> 
+<!-- footer -->
+<div class="container">
+    <footer class="footer">
+        <div class="social-links text-center m-auto">
+            <a href="https://www.linkedin.com/in/maiar-hussein" class="link"><i class="ti-linkedin"></i> </a>
+            <a href="https://github.com/Maiarhu20" class="link"><i class="ti-github"></i></a>
+        </div>
+    </footer>
+</div> 
 
     <!-- core  -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>

@@ -76,5 +76,20 @@ $(document).ready(function () {
     });
 });
 
+// project section scroll
+$(document).ready(function () {
+  const scrollContainer = document.querySelector(".project-scroll-content");
+
+  $("#leftArrow").click(function () {
+    scrollContainer.scrollBy({ left: -300, behavior: "smooth" });
+  });
+
+  $("#rightArrow").click(function () {
+    scrollContainer.scrollBy({ left: 300, behavior: "smooth" });
+  });
+});
+
+
+
 
 

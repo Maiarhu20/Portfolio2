@@ -75,6 +75,76 @@
 }
 
 
+/* projects section*/
+.project-scroll-container {
+  overflow-x: hidden;
+  position: relative;
+  padding: 0 90px; /* Room for arrows */
+}
+
+.project-scroll-content {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  padding-bottom: 15px;
+}
+
+/* Hide scrollbar */
+.project-scroll-content::-webkit-scrollbar {
+  display: none;
+}
+.project-scroll-content {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.project-card {
+  min-width: 250px;
+  flex: 0 0 auto;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Arrow styles */
+.scroll-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color:   #695aa6;
+  color: white;
+  border: none;
+  padding: 12px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 100;
+  font-size: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  outline-color:#695aa6;
+  box-shadow: 0 2px 6px rgb(109, 63, 130);
+}
+
+.scroll-arrow:hover {
+  background-color: #6f42c1 ;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+@media (max-width: 768px) {
+  .scroll-arrow {
+    display: none;
+  }
+}
+
+
+
 /* Education Section */
 .education-card {
   padding: 20px;
@@ -169,7 +239,7 @@
   right: 20px;
   width: 50px;
   height: 50px;
-  background-color: #937ac2;
+  background-color: #8169ae;
   color: white;
   border: none;
   border-radius: 50%;
@@ -182,8 +252,7 @@
 }
 
 .back-to-top:hover {
-  background-color: #937ac2;
-  border: none;
+  background-color: #6f42c1;
 }
 
 
