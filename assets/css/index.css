@@ -75,11 +75,12 @@
 }
 
 
-/* projects section*/
+/* projects section */
 .project-scroll-container {
-  overflow-x: hidden;
+  overflow-x: auto; /* Allow horizontal scrolling */
   position: relative;
-  padding: 0 90px; /* Room for arrows */
+  padding: 0 90px; /* Room for arrows on desktop */
+  -webkit-overflow-scrolling: touch; /* Smooth touch scrolling on iOS */
 }
 
 .project-scroll-content {
@@ -88,6 +89,7 @@
   overflow-x: scroll;
   scroll-behavior: smooth;
   padding-bottom: 15px;
+  scroll-snap-type: x mandatory; /* Add snap scroll */
 }
 
 /* Hide scrollbar */
@@ -104,6 +106,7 @@
   flex: 0 0 auto;
   border: 1px solid #eee;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  scroll-snap-align: start;
 }
 
 /* Arrow styles */
@@ -111,7 +114,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color:   #695aa6;
+  background-color: #695aa6;
   color: white;
   border: none;
   padding: 12px 15px;
@@ -120,12 +123,12 @@
   z-index: 100;
   font-size: 20px;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  outline-color:#695aa6;
+  outline-color: #695aa6;
   box-shadow: 0 2px 6px rgb(109, 63, 130);
 }
 
 .scroll-arrow:hover {
-  background-color: #6f42c1 ;
+  background-color: #6f42c1;
   transform: translateY(-50%) scale(1.1);
 }
 
@@ -137,9 +140,23 @@
   right: 10px;
 }
 
+/* Mobile Styles */
 @media (max-width: 768px) {
   .scroll-arrow {
-    display: none;
+    display: none; /* Hide arrows on mobile */
+  }
+
+  .project-scroll-container {
+    padding: 0 10px; /* Smaller side padding */
+  }
+
+  .project-card {
+    min-width: 80%; /* Show one card at a time on mobile */
+    flex: 0 0 auto;
+  }
+
+  .project-scroll-content {
+    gap: 1rem;
   }
 }
 
